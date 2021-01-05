@@ -21,7 +21,7 @@ class PlatformSvg {
         final String base64 = base64Encode(utf8.encode(svgString));
         final String base64String = 'data:image/svg+xml;base64,$base64';
         final html.ImageElement element = html.ImageElement(
-            src: base64String, height: width.toInt(), width: width.toInt());
+            src: base64String, height: height.toInt(), width: width.toInt());
         return element;
       });
       return Container(
